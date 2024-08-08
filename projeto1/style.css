@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    main > section > div > img {
+        width: 95vw;
+        margin: auto;
+        display: block;
+    }
+
+    main > section#ntp-principal > p {
+        font-size: larger;
+    }
+
+    section#nt-principal {
+        border: 1px solid;
+        width: 100vw;
+        height: 590px;
+        margin: auto;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    div.ntp {
+        border: 1px solid black;
+        padding: 5px;
+        
+    }
+}
