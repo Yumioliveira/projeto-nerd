@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+    header {
+        background-color: black;
+        color: white;
+        text-align: center;padding: 40px;
+    }
+
+    header > h1 {
+        font-size: 3em;
+        font-family: "Pixelify Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+    }
+
+    main {
+        margin: 5px;
+        border: 1px solid black;
+        height: 700px;
+        display: flex;
+    }
+
+    main > section#nt-principal {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    main > section#nt-principal > div.ntp > a > img {
+        width: 90vw;
+        border-radius: 10px;
+    }
+
+    main > section#nt-principal > div.ntp {
+        padding: 10px;
+        border: 1px solid;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+
+    main > section#nt-principal > div.ntp > p {
+        font-size: 1.6rem;
+    }
+
+    main > section#nt-principal > div.ntp > p > a {
+        text-decoration: none;
+        color: black;
+    }
+}
