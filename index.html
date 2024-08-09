@@ -5,30 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mundo Nerd</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
-        </style>
+     @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+    </style>
+    <script src="https://kit.fontawesome.com/7eac05663c.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="imagens/favicon-16x16.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Mundo Nerd</h1>
+
+        <i id="icone" class="fa-solid fa-bars" onclick="clickMenu()"></i>
+        <menu id="navegacao">
+            <ul>
+                <li><a href="#">Geek</a></li>
+                <li><a href="#">Nacional</a></li>
+                <li><a href="#">internacional</a></li>
+            </ul>
+        </menu>
     </header>
-    <nav>
-        <a href="">Geek</a>
-        <a href="">Ciencia</a>
-        <a href="">Internacional</a>
-        <a href="">Nacional</a>
-    </nav>
     <main>
         <section id="nt-principal">
+                <div class="ntp">
+
+                    <a href="https://yumioliveira.github.io/Mundo-nerd/" target="_parent">
+                        <img src="imagens/Frierem-g.webp" alt="" >
+                    </a>
+
+                    <p>
+                        <a href="https://yumioliveira.github.io/Mundo-nerd/" target="_parent">O fenômeno 'Frieren': como uma elfa introspectiva conquistou os otakus
+
+                        </a>
+                    </p>
+
+                </div>
             <div class="ntp">
-                <a href="https://yumioliveira.github.io/Mundo-nerd/" target="_parent"><img src="imagens/Frierem-g.webp" alt="" ></a>
-                <p><a href="https://yumioliveira.github.io/Mundo-nerd/" target="_parent">O fenômeno 'Frieren': como uma elfa introspectiva conquistou os otakus</a></p>
-            </div>
-            <div class="ntp">
-                <a href=""><img src="imagens/harry-collett-emma-d-arcy-oscar-eskinazi.avif" alt=""></a>
-                <p><a href="">'A Casa do Dragão': o que esperar da 2ª temporada da série derivada de 'Game of Thrones'</a>?</p>
+
+                <a href="">
+                    <img src="imagens/harry-collett-emma-d-arcy-oscar-eskinazi.avif" alt="">
+                </a>
+
+                <p>
+                    <a href="">'A Casa do Dragão': o que esperar da 2ª temporada da série derivada de 'Game of Thrones'</a>?
+                </p>
             </div>
         </section>
         <section></section>
@@ -36,5 +55,14 @@
         <section></section>
         <section></section>
     </main>
+    <script>
+        function clickMenu() {
+            if (navegacao.style.display == 'block') {
+                navegacao.style.display = "none"
+            } else {
+                navegacao.style.display = "block"
+            }
+        }
+    </script>
 </body>
 </html>
