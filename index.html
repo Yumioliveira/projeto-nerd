@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="imagens/favicon-16x16.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onresize="mudouTamanho">
     <header>
         <h1>Mundo Nerd</h1>
 
@@ -56,6 +56,15 @@
         <section></section>
     </main>
     <script>
+
+        function mudouTamanho() {
+            if (window.innerHeight >= 768) {
+                navegacao.style.display = 'block'
+            } else {
+                navegacao.style.display = 'none'
+            }
+        }
+
         function clickMenu() {
             if (navegacao.style.display == 'block') {
                 navegacao.style.display = "none"
